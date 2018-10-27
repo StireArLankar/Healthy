@@ -1,0 +1,11 @@
+.organic {
+	text-align: center;
+}
+
+.organic__wrapper {
+  @include wrapper;
+}
+
+.organic__menu {
+  grid-template-columns:  180px 180px 180px 180px 180px 180;
+}

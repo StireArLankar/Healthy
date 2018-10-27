@@ -1,0 +1,41 @@
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "normalize.scss";
+@import "common.scss";
+
+@import "header/header.scss";
+@import "header/nav.scss";
+@import "header/social.scss";
+
+@import "sections/intro/intro.scss";
+
+@import "sections/goods/goods.scss";
+@import "blocks/menu.scss";
+@import "sections/goods/goods-slider.scss";
+@import "blocks/medium.scss";
+
+@import "sections/about-us/about-us.scss";
+
+@import "sections/products/products.scss";
+
+@import "sections/organic/organic.scss";
+@import "sections/organic/organic-slider.scss";
+
+@import "sections/deal/deal.scss";
+@import "blocks/big.scss";
+
+@import "sections/random/random.scss";
+@import "blocks/small.scss";
+
+@import "sections/banners/banners.scss";
+@import "blocks/banner.scss";
+
+@import "sections/subscribe/subscribe.scss";
+
+@import "sections/tribute/tribute.scss";
+
+@import "sections/blog/blog.scss";
+@import "blocks/news.scss";
+
+@import "footer/footer.scss";

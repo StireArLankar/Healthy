@@ -1,0 +1,30 @@
+.subscribe {
+  background-color: #f7f6f2;
+}
+
+.subscribe__form {
+	display: flex;
+
+  @include wrapper;
+}
+
+.subscribe__label {
+	flex-grow: 1;
+	display: flex;
+}
+
+.subscribe__input {
+	flex-grow: 1;
+	align-self: center;
+	padding: 10px;
+	border-radius: 25px;
+	border: 0;
+}
+
+.subscribe__btn {
+	border-radius: 25px;
+	border: 0;
+	background-color: #7cc000;
+	padding: 10px;
+	align-self: center;
+}

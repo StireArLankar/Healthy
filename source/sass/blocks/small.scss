@@ -1,0 +1,30 @@
+.small {
+	display: flex;
+	margin-bottom: 30px;
+	border: 1px solid #eeeeee;
+	border-radius: 8px;
+}
+
+.small__img {
+	margin: 4px 0px 4px 4px;
+}
+
+.smalldescription {
+	padding: 30px 15px;
+	flex-grow: 1;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+}
+
+.small__title{
+	margin: 0;
+	padding: 0;
+}
+
+.small__price {
+	margin: 0;
+	padding: 0;
+
+  @include price;
+}

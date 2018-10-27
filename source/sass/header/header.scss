@@ -1,0 +1,23 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	margin-top: 24px;
+	z-index: 1;
+
+  @include wrapper-wide;
+}
+
+.header__logo-wrapper {
+  width: 134px;
+  height: 55px;
+}
+
+.header__logo {
+  width: 100%;
+  height: auto;
+}
+
+.header__social {
+  position: relative;
+}

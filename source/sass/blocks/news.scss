@@ -1,0 +1,29 @@
+.news {
+	display: flex;
+}
+
+.news__img-wrapper {
+	position: relative;
+	border: 1px solid #eeeeee;
+	border-radius: 9px;
+	width: 240px;
+	flex-shrink: 0;
+	height: 220px;
+}
+
+.news__img {
+	position: relative;
+	bottom: -20px;
+	right: -20px;
+	border-radius: 9px;
+	width: 100%;
+	height: auto;
+}
+
+.news__description {
+	flex-grow: 1;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	padding-left: 58px;
+}

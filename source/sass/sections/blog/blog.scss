@@ -1,0 +1,16 @@
+.blog__wrapper {
+  @include wrapper;
+}
+
+.blog__title,
+.blog__tagline {
+	text-align: center;
+	display: block;
+}
+
+.blog__list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 30px;
+}
