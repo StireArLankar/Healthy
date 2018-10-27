@@ -1,5 +1,5 @@
 .footer {
-margin-top: 1  40px;
+  margin-top: 40px;
 }
 
 .footer__top {
@@ -8,7 +8,7 @@ margin-top: 1  40px;
   padding-top: 120px;
 }
 
-.footer__top-wrapper{
+.footer__top-wrapper {
   @include wrapper;
   display: grid;
   grid-template-columns: 370px 170px 170px auto;

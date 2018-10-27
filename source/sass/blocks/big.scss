@@ -33,15 +33,15 @@
   background-repeat: no-repeat;
 
   &--like {
-    background-image: url('../img/like.svg');
+    background-image: url("../img/like.svg");
   }
 
   &--cart {
-    background-image: url('../img/cart.svg');
+    background-image: url("../img/cart.svg");
   }
 
   &--resize {
-    background-image: url('../img/resize.png');
+    background-image: url("../img/resize.png");
   }
 }
 

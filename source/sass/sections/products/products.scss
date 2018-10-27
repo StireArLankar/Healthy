@@ -34,17 +34,17 @@
   flex-grow: 1;
   align-items: center;
   font-size: 18px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 1.2;
   font-weight: 300;
 
   &:hover {
     border-color: green;
-    box-shadow: 0px 10px 60px -10px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 60 -10px rgba(0, 0, 0, 0.3);
   }
 
   &--fruits {
-    background-image: url('../img/products-1.jpg');
+    background-image: url("../img/products-1.jpg");
     background-repeat: no-repeat;
     background-position: 50% 20%;
   }
@@ -58,7 +58,7 @@
 
 .products__amount {
   font-size: 13px;
-  font-family: "Helvetica";
+  font-family: "Helvetica", sans-serif;
   font-style: italic;
   color: #7fb900;
   line-height: 1.2;
