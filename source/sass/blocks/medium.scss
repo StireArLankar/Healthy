@@ -9,7 +9,7 @@
 	text-align: center;
 	border-radius: 10px;
 	box-sizing: border-box;
-	background-image: url('img/wave.svg');
+	background-image: url('../img/wave.svg');
 	background-repeat: no-repeat;
 	background-position: 50% 80%;
 	background-color: #f7f6f2;
@@ -46,6 +46,7 @@
 }
 
 .medium__btn-list {
+  @include list;
 	display: none;
 	position: absolute;
 	left: 50%;
@@ -70,17 +71,17 @@
   background-repeat: no-repeat;
 
   &--like {
-    background-image: url('img/like.svg');
+    background-image: url('../img/like.svg');
   	border-top-left-radius: 30px;
   	border-bottom-left-radius: 30px;
   }
 
   &--cart {
-    background-image: url('img/cart.svg');
+    background-image: url('../img/cart.svg');
   }
 
   &--resize {
-    background-image: url('img/resize.png');
+    background-image: url('../img/resize.png');
   	border-top-right-radius: 30px;
   	border-bottom-right-radius: 30px;
   }

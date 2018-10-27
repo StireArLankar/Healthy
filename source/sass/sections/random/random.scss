@@ -6,3 +6,7 @@
 	grid-template-rows: 1fr;
 	grid-column-gap: 30px;
 }
+
+.random__list {
+  @include list;
+}

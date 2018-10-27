@@ -4,7 +4,8 @@
 	right: 60px;
 }
 
-.social-list {
+.social__list {
+  @include list;
   text-align: right;
 	position: absolute;
 }

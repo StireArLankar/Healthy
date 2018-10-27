@@ -6,6 +6,8 @@
 	justify-content: center;
 	text-align: center;
   position: relative;
+
+  @include list;
 }
 
 .menu__item {

@@ -1,7 +1,7 @@
 .intro {
   min-width: 1170px;
 	height: 1080px;
-	background-image: url('img/header.jpg');
+	background-image: url('../img/header.jpg');
 	background-repeat: no-repeat;
 	background-position: 50% 100%;
 	background-color: #f4f3be;
@@ -16,7 +16,7 @@
   	bottom: 0;
   	left: 50%;
   	transform: translateX(-50%);
-  	background-image: url("img/wave.svg");
+  	background-image: url("../img/wave.svg");
   	background-size: 100%;
   	background-repeat: no-repeat;
   	width: 370px;

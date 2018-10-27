@@ -9,6 +9,7 @@
 }
 
 .footer__top-wrapper{
+	@include wrapper;
 	display: grid;
 	grid-template-columns: 370px 170px 170px auto;
 	grid-template-rows: 1fr;
@@ -20,6 +21,7 @@
 }
 
 .footer__gallery-list {
+	@include list;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -27,11 +29,13 @@
 	grid-row-gap: 15px;
 }
 
-.footer__bottom {
+.footer__bottom-wrapper {
 	margin-top: 60px;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 60px;
+
+  @include wrapper;
 }
 
 .footer__copyright {
@@ -39,5 +43,6 @@
 }
 
 .footer__navigation-list {
+	@include list;
 	display: flex;
 }

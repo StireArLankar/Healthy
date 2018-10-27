@@ -1,9 +1,11 @@
-.tribute {
-	position: relative;
+.tribute__wrapper {
+  @include wrapper;
+}
+
+.tribute__inner-wrapper {
+  position: relative;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-
-  @include wrapper;
 }
 
 .tribute__quote {
