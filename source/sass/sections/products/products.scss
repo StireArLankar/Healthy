@@ -1,69 +1,68 @@
 .products {
-  margin-top: 130px;
-
   @include wrapper;
+  margin-top: 130px;
 }
 
 .products__row {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
-	grid-column-gap: 30px;
-	margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 30px;
+  margin-top: 70px;
 }
 
 .products__list {
   @include list;
-	display: grid;
-	grid-template-columns: 170px 170px 170px;
-	grid-template-rows: 300px;
-	grid-column-gap: 30px;
+  display: grid;
+  grid-template-columns: 170px 170px 170px;
+  grid-template-rows: 300px;
+  grid-column-gap: 30px;
 }
 
 .products__item {
-	display: flex;
+  display: flex;
 }
 
 .products__link {
-	border: 1px solid #efefef;
-	border-radius: 7px;
-	display: flex;
-	flex-flow: column;
-	padding-top: 217px;
-	padding-bottom: 40px;
-	justify-content: space-between;
-	flex-grow: 1;
-	align-items: center;
-	font-size: 18px;
-	font-family: "Roboto";
-	line-height: 1.2;
-	font-weight: 300;
+  border: 1px solid #efefef;
+  border-radius: 7px;
+  display: flex;
+  flex-flow: column;
+  padding-top: 217px;
+  padding-bottom: 40px;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Roboto";
+  line-height: 1.2;
+  font-weight: 300;
 
   &:hover {
     border-color: green;
-  	box-shadow: 0px 10px 60px -10px rgba(0,0,0,0.3);
+    box-shadow: 0px 10px 60px -10px rgba(0,0,0,0.3);
   }
 
   &--fruits {
     background-image: url('../img/products-1.jpg');
-  	background-repeat: no-repeat;
-  	background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
   }
 }
 
 .products__title {
-	&--bold {
+  &--bold {
     font-weight: 900;
   }
 }
 
 .products__amount {
-	font-size: 13px;
-	font-family: "Helvetica";
-	font-style: italic;
-	color: #7fb900;
-	line-height: 1.2;
+  font-size: 13px;
+  font-family: "Helvetica";
+  font-style: italic;
+  color: #7fb900;
+  line-height: 1.2;
   margin: 0;
-	padding: 0;
-	text-align: center;
+  padding: 0;
+  text-align: center;
 }

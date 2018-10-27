@@ -3,28 +3,27 @@
 }
 
 .subscribe__form {
-	display: flex;
-
   @include wrapper;
+  display: flex;
 }
 
 .subscribe__label {
-	flex-grow: 1;
-	display: flex;
+  flex-grow: 1;
+  display: flex;
 }
 
 .subscribe__input {
-	flex-grow: 1;
-	align-self: center;
-	padding: 10px;
-	border-radius: 25px;
-	border: 0;
+  flex-grow: 1;
+  align-self: center;
+  padding: 10px;
+  border-radius: 25px;
+  border: 0;
 }
 
 .subscribe__btn {
-	border-radius: 25px;
-	border: 0;
-	background-color: #7cc000;
-	padding: 10px;
-	align-self: center;
+  border-radius: 25px;
+  border: 0;
+  background-color: #7cc000;
+  padding: 10px;
+  align-self: center;
 }

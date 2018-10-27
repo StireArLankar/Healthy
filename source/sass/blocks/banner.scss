@@ -1,14 +1,14 @@
 .banner {
-	background-color: green;
-	border-radius: 8px;
-	padding: 60px 40px 35px;
-	min-height: 300px;
-	display: flex;
-	flex-flow: column;
+  background-color: green;
+  border-radius: 8px;
+  padding: 60px 40px 35px;
+  min-height: 300px;
+  display: flex;
+  flex-flow: column;
 }
 
 .banner__text {
-	margin: 0;
+  margin: 0;
 
   &--bold {
     font-weight: 900;
@@ -20,17 +20,17 @@
 }
 
 .banner__inner {
-	position: relative;
-	flex-grow: 1;
+  position: relative;
+  flex-grow: 1;
 }
 
 .banner__link {
-	position: absolute;
-	width: 150px;
-	padding: 5px 10px;
-	background-color: #b8c800;
-	border: 4px solid white;
-	border-radius: 11px;
-	bottom: -15px;
-	text-transform: uppercase;
+  position: absolute;
+  width: 150px;
+  padding: 5px 10px;
+  background-color: #b8c800;
+  border: 4px solid white;
+  border-radius: 11px;
+  bottom: -15px;
+  text-transform: uppercase;
 }

@@ -1,11 +1,11 @@
 .organic-slider__list {
   @include list;
-	display: grid;
-	grid-template-columns: 270px 270px 270px 270px;
-	grid-template-rows: auto;
-	grid-column-gap: 30px;
+  display: grid;
+  grid-template-columns: 270px 270px 270px 270px;
+  grid-template-rows: auto;
+  grid-column-gap: 30px;
 }
 
 .organic-slider__item {
-	margin: 30px 0;
+  margin: 30px 0;
 }

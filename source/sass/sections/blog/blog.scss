@@ -4,14 +4,14 @@
 
 .blog__title,
 .blog__tagline {
-	text-align: center;
-	display: block;
+  text-align: center;
+  display: block;
 }
 
 .blog__list {
   @include list;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
-	grid-column-gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
 }

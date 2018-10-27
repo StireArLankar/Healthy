@@ -1,6 +1,6 @@
 .deal {
-	background-color: #f7f6f2;
-	padding-bottom: 130px;
+  background-color: #f7f6f2;
+  padding-bottom: 130px;
 }
 
 .deal__wrapper {
@@ -8,79 +8,79 @@
 }
 
 .deal__top {
-	display: grid;
-	grid-template-columns: 1fr 200px 1fr;
-	grid-template-rows: auto;
-	grid-column-gap: 30px;
-	grid-template-areas:
-	"a c d "
-	"b c d ";
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 30px;
+  grid-template-areas:
+  "a c d "
+  "b c d ";
 }
 
 .deal__title {
-	grid-area: a;
-	text-align: right;
+  grid-area: a;
+  text-align: right;
 }
 
 .deal__tagline {
-	grid-area: b;
-	text-align: right;
+  grid-area: b;
+  text-align: right;
 }
 
 .deal__img-wrapper {
-	grid-area: c;
-	width: 200px;
-	height: 128px;
+  grid-area: c;
+  width: 200px;
+  height: 128px;
 }
 
 .deal__img {
   width: 100%;
-	height: auto;
+  height: auto;
 }
 
 .deal__text {
-	grid-area: d;
-	text-align: left;
+  grid-area: d;
+  text-align: left;
 }
 
 .deal__time-list {
   @include list;
-	display: flex;
-	justify-content: center;
-	margin-top: 46px;
+  display: flex;
+  justify-content: center;
+  margin-top: 46px;
 }
 
 .deal__time-item {
-	width: 80px;
-	height: 80px;
-	border-radius: 8px;
-	border: 5px solid green;
-	text-align: center;
-	margin: 0 3px;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  border: 5px solid green;
+  text-align: center;
+  margin: 0 3px;
 }
 
 .deal__list {
   @include list;
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .deal__item {
-	width: 48.7%;
+  width: 48.7%;
 }
 
 .deal__pagination {
   @include list;
-	display: flex;
-	justify-content: center;
-	margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
 }
 
 .deal__pagination-btn {
-	width: 24px;
-	height: 24px;
-	background-color: white;
-	border-radius: 50%;
-	margin: 0 4px;
-	padding: 0;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 4px;
+  padding: 0;
 }
