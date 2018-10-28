@@ -56,13 +56,28 @@
   margin-top: 5px;
   padding-top: 210px;
   z-index: 1;
-  background-image: url("../img/about_us_logo-1.png");
   background-repeat: no-repeat;
   background-position: 50% 20%;
 
   &:first-child,
   &:last-child {
     margin-top: 120px;
+  }
+
+  &--1 {
+    background-image: url("../img/about_us_logo-1.png");
+  }
+
+  &--2 {
+    background-image: url("../img/about_us_logo-2.png");
+  }
+
+  &--3 {
+    background-image: url("../img/about_us_logo-3.png");
+  }
+
+  &--4 {
+    background-image: url("../img/about_us_logo-4.png");
   }
 }
 

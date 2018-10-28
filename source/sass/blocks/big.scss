@@ -1,6 +1,6 @@
 .big {
   display: flex;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: white;
   margin-top: 48px;
 }
@@ -9,6 +9,8 @@
   @include list;
   display: flex;
   flex-flow: column;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .big__btn-item {
@@ -16,9 +18,15 @@
   display: flex;
   border: 2px solid #f7f6f2;
   border-bottom: 0;
+  border-left: 0;
 
   &:first-child {
     border-top: 0;
+    border-top-left-radius: 10px;
+  }
+
+  &:last-child {
+    border-bottom-left-radius: 10px;
   }
 }
 
@@ -27,33 +35,69 @@
   font-size: 0;
   display: block;
   width: 60px;
-  height: 45px;
   background-position: 50% 50%;
   background-color: white;
   background-repeat: no-repeat;
 
   &--like {
-    background-image: url("../img/like.svg");
+    background-image: url("../img/icon-like.svg");
+    border-top-left-radius: 10px;
   }
 
   &--cart {
-    background-image: url("../img/cart.svg");
+    background-image: url("../img/icon-cart.svg");
   }
 
   &--resize {
-    background-image: url("../img/resize.png");
+    background-image: url("../img/icon-resize.svg");
+    border-bottom-left-radius: 10px;
   }
 }
 
 .big__description {
   flex-grow: 1;
-  padding-left: 37px;
+  padding: 40px 0 40px 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.big__tagline {
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 12px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  letter-spacing: 0.4em;
+  font-weight: 500;
+}
+
+.big__title {
+  text-transform: lowercase;
+  font-size: 30px;
+  line-height: 36px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+.big__text {
+  font-size: 14px;
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.8;
+}
+
+.big__price {
+  @include price;
 }
 
 .big__right-column {
+  position: relative;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  width: 205px;
+  flex-shrink: 0;
 }
 
 .big__special-list {
@@ -85,6 +129,12 @@
 .big__img-wrapper {
   width: 205px;
   height: 270px;
+  position: absolute;
+  top: 58px;
+  right: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .big__img {

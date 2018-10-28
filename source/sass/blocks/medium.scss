@@ -68,17 +68,17 @@
   background-repeat: no-repeat;
 
   &--like {
-    background-image: url("../img/like.svg");
+    background-image: url("../img/icon-like.svg");
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
   }
 
   &--cart {
-    background-image: url("../img/cart.svg");
+    background-image: url("../img/icon-cart.svg");
   }
 
   &--resize {
-    background-image: url("../img/resize.png");
+    background-image: url("../img/icon-resize.svg");
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
   }
@@ -86,6 +86,14 @@
 
 .medium__description {
   background-color: white;
+}
+
+.medium__name {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+  text-transform: lowercase;
 }
 
 .medium__price {

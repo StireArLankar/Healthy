@@ -1,0 +1,38 @@
+.o-menu {
+  @include list;
+  display: flex;
+  justify-content: center;
+}
+
+.o-menu__item {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+}
+
+.o-menu__btn {
+  border: 2px solid #e5e5e4;
+  border-radius: 23px;
+  padding: 7px 10px;
+  margin: 0 6px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9f9e9c;
+  text-transform: lowercase;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+
+  &:hover {
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &--open {
+    background-color: $green-color;
+    border-color: $green-color;
+    color: white;
+  }
+
+  &--bold {
+    font-weight: 900;
+  }
+}

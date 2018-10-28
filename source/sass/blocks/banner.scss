@@ -1,36 +1,86 @@
 .banner {
-  background-color: green;
+  position: relative;
   border-radius: 8px;
-  padding: 60px 40px 35px;
+  padding: 35px 70px 35px 40px;
   min-height: 300px;
   display: flex;
   flex-flow: column;
+
+  &--olive {
+    background: url("../img/banner-olive.png") no-repeat 0 0;
+    background-color: #d7edcd;
+  }
+
+  &--orange {
+    background: url("../img/banner-orange.png") no-repeat 0 0;
+    background-color: #fbefa1;
+  }
 }
 
-.banner__text {
+.banner__tagline {
+  text-transform: uppercase;
   margin: 0;
-
-  &--bold {
-    font-weight: 900;
-  }
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+  font-weight: 300;
 
   &--right {
     text-align: right;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--green {
+    color: #a7c57f;
+  }
+
+  &--orange {
+    color: #afa765;
   }
 }
 
 .banner__inner {
   position: relative;
   flex-grow: 1;
+  padding: 110px 20px 20px 35px;
+}
+
+.banner__title {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+.banner__text {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.2em;
 }
 
 .banner__link {
+  color: $white-color;
   position: absolute;
-  width: 150px;
-  padding: 5px 10px;
-  background-color: #b8c800;
+  width: 157px;
+  padding: 5px 11px;
   border: 4px solid white;
-  border-radius: 11px;
-  bottom: -15px;
+  border-radius: 25px;
+  bottom: 20px;
+  left: 75px;
   text-transform: uppercase;
+
+  &--green {
+    background-color: #b8c800;
+  }
+
+  &--orange {
+    background-color: #ffbd0e;
+  }
 }

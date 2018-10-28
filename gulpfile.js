@@ -21,16 +21,16 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("docs/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("docs/css"))
     .pipe(server.stream());
 });
 
 gulp.task("server", function () {
   server.init({
-    server: "build/",
+    server: "docs/",
     notify: false,
     open: true,
     cors: true,
@@ -50,7 +50,7 @@ gulp.task("refresh", function(done) {
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("docs"));
 });
 
 gulp.task("gulp-uglify", function() {
@@ -59,21 +59,21 @@ gulp.task("gulp-uglify", function() {
       path.basename += ".min";
     }))
     .pipe(uglify())
-    .pipe(gulp.dest("build/js"))
+    .pipe(gulp.dest("docs/js"))
 });
 
 gulp.task("copy-font", function () {
   return gulp.src("source/fonts/**/*.{woff,woff2}", {base: "source"})
-    .pipe(gulp.dest("build"))
+    .pipe(gulp.dest("docs"))
 });
 
 gulp.task("copy-img", function () {
   return gulp.src("source/img/opt/**")
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("docs/img"))
 });
 
 gulp.task("clean", function() {
-  return del("build");
+  return del("docs");
 });
 
 gulp.task("build", gulp.series(

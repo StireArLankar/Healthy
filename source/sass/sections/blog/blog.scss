@@ -8,8 +8,18 @@
   display: block;
 }
 
+.blog__tagline {
+  @include tagline(12px);
+}
+
+.blog__title {
+  @include title(35px);
+  margin: 25px 0 0;
+}
+
 .blog__list {
   @include list;
+  margin-top: 85px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;

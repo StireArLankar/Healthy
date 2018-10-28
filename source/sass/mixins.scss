@@ -25,5 +25,21 @@
   color: $green-color;
   font-weight: bold;
   line-height: 1.2;
-  text-align: center;
+}
+
+@mixin tagline($fz, $ls: 0.4em) {
+  text-transform: uppercase;
+  font-size: $fz;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+  letter-spacing: $ls;
+}
+
+@mixin title($fz) {
+  text-transform: lowercase;
+  font-size: $fz;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
 }

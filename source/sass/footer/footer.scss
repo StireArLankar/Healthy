@@ -1,5 +1,5 @@
 .footer {
-  margin-top: 40px;
+  margin-top: 150px;
 }
 
 .footer__top {
@@ -16,6 +16,104 @@
   grid-column-gap: 30px;
 }
 
+.footer__logo-wrapper {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  position: relative;
+  padding-bottom: 20px;
+
+  &::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: $green-color;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
+}
+
+.footer__contacts-text {
+  position: relative;
+  font-size: 14px;
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.5;
+  text-align: left;
+  padding-right: 20px;
+  margin-top: 34px;
+}
+
+.footer__contacts-list {
+  @include list;
+}
+
+.footer__contacts-item {
+  padding-left: 35px;
+
+  &--addres {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.85;
+  }
+
+  &--email {
+    font-size: 15px;
+    font-family: "Helvetica", sans-serif;
+    font-weight: 400;
+    line-height: 1.85;
+  }
+}
+
+.footer__contacts-link {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 1.85;
+  color: $green-color;
+}
+
+.footer__subtitle {
+  @include title(18px);
+  margin: 0;
+  padding: 40px 0 15px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: $green-color;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
+}
+
+.footer__list {
+  @include list;
+  margin-top: 30px;
+}
+
+.footer__list-link {
+  @include title(15px);
+  line-height: 33px;
+  padding-left: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: url("../img/icon-arrow-circle-o-right.svg") no-repeat 0 0;
+    left: 0;
+    top: calc(50% - 6px);
+  }
+}
+
 .footer__gallery {
   padding-left: 100px;
 }
@@ -27,6 +125,7 @@
   grid-template-rows: 1fr 1fr;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
+  margin-top: 30px;
 }
 
 .footer__bottom-wrapper {
@@ -35,13 +134,44 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -105px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../img/wave.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 370px;
+    height: 45px;
+  }
 }
 
 .footer__copyright {
   margin: 0;
+  font-size: 15px;
+  font-family: "Helvetica", sans-serif;
+  color: #b6b6b6;
+  line-height: 1.4;
+  text-align: left;
 }
 
 .footer__navigation-list {
   @include list;
   display: flex;
+}
+
+.footer__navigation-link {
+  @include tagline(15px, 0);
+  line-height: 21px;
+  text-transform: lowercase;
+  opacity: 0.5;
+  margin-left: 35px;
+
+  &:hover {
+    opacity: 1;
+  }
 }

@@ -11,15 +11,16 @@
 
 @import "sections/intro/intro.scss";
 
-@import "sections/goods/goods.scss";
 @import "blocks/menu.scss";
-@import "sections/goods/goods-slider.scss";
 @import "blocks/medium.scss";
+@import "sections/goods/goods.scss";
+@import "sections/goods/goods-slider.scss";
 
 @import "sections/about-us/about-us.scss";
 
 @import "sections/products/products.scss";
 
+@import "blocks/o-menu.scss";
 @import "sections/organic/organic.scss";
 @import "sections/organic/organic-slider.scss";
 
@@ -40,3 +41,4 @@
 @import "blocks/news.scss";
 
 @import "footer/footer.scss";
+@import "font-weight-bold.scss";

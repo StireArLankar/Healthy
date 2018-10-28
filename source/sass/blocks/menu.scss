@@ -20,17 +20,25 @@
   border-radius: 23px;
   width: 180px;
   padding: 11px 0;
+  font-size: 16px;
   line-height: 19px;
   color: #9f9e9c;
   margin-bottom: 20px;
+  text-transform: lowercase;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
 
   &:hover {
     box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
   }
-}
 
-.menu__btn--open {
-  background-color: $green-color;
-  border-color: $green-color;
-  color: white;
+  &--open {
+    background-color: $green-color;
+    border-color: $green-color;
+    color: white;
+  }
+
+  &--bold {
+    font-weight: 900;
+  }
 }

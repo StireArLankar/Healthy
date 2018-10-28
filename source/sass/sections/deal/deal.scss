@@ -1,6 +1,7 @@
 .deal {
   background-color: #f7f6f2;
   padding-bottom: 130px;
+  padding-top: 115px;
 }
 
 .deal__wrapper {
@@ -8,6 +9,7 @@
 }
 
 .deal__top {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 200px 1fr;
   grid-template-rows: auto;
@@ -15,16 +17,47 @@
   grid-template-areas:
     "a c d "
     "b c d ";
+  border-bottom: 2px solid $white-color;
+  padding-bottom: 35px;
+
+  &::after {
+    content: "";
+    width: 20%;
+    height: 2px;
+    position: absolute;
+    background-color: $green-color;
+    bottom: -2px;
+    left: 40%;
+  }
 }
 
 .deal__title {
   grid-area: a;
   text-align: right;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  letter-spacing: 0.4em;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .deal__tagline {
   grid-area: b;
   text-align: right;
+  text-transform: lowercase;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 0;
+
+  &--bold {
+    font-weight: 900;
+  }
 }
 
 .deal__img-wrapper {
@@ -41,6 +74,12 @@
 .deal__text {
   grid-area: d;
   text-align: left;
+  font-size: 14px;
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 .deal__time-list {
@@ -54,9 +93,56 @@
   width: 80px;
   height: 80px;
   border-radius: 8px;
-  border: 5px solid green;
   text-align: center;
   margin: 0 3px;
+  position: relative;
+  border: 5px solid transparent;
+  background: white;
+  background-clip: padding-box;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: "";
+    border-radius: 11px;
+    background-color: #5bc5d0;
+    background-image: linear-gradient(#a6d3a0, #5bc5d0);
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    z-index: -2;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    border-radius: 8px;
+    background-color: $white-color;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.deal__time-number {
+  font-size: 40px;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+}
+
+.deal__time-desc {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Helvetica", sans-serif;
+  color: $time-text-color;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .deal__list {
@@ -73,14 +159,24 @@
   @include list;
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 140px;
 }
 
 .deal__pagination-btn {
   width: 24px;
   height: 24px;
-  background-color: white;
+  background-color: $white-color;
   border-radius: 50%;
   margin: 0 4px;
   padding: 0;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  color: #bfbfbf;
+  font-weight: bold;
+  line-height: 1.2;
+
+  &--current {
+    background-color: #90d3a6;
+    color: $white-color;
+  }
 }

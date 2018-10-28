@@ -5,11 +5,23 @@
   border-radius: 8px;
 }
 
-.small__img {
+.small__img-wrapper {
+  width: 160px;
+  height: 110px;
   margin: 4px 0 4px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.smalldescription {
+.small__img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+}
+
+.small__description {
   padding: 30px 15px;
   flex-grow: 1;
   display: flex;
@@ -18,8 +30,13 @@
 }
 
 .small__title {
+  text-transform: lowercase;
   margin: 0;
   padding: 0;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+  font-weight: 300;
 }
 
 .small__price {
